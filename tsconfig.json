@@ -23,13 +23,16 @@
 
 		"baseUrl": "./",
 		"paths": {
-			"@app/*": ["./src/app/*"],
-			"@components/*": ["./src/components/*"],
-			"@helpers/*": ["./src/helpers/*"],
-			"@stores/*": ["./src/stores/*"],
-			"@types/*": ["./src/types/*"],
-			"@assets/*": ["./src/assets/*"],
-			"@public/*": ["./public/*"]
+			"@/api/*": ["./src/api/*"],
+			"@/app/*": ["./src/app/*"],
+			"@/components/*": ["./src/components/*"],
+			"@/stores/*": ["./src/stores/*"],
+			"@/assets/*": ["./src/shared/assets/*"],
+			"@/consts/*": ["./src/shared/consts/*"],
+			"@/helpers/*": ["src/shared/helpers/*"],
+			"@/styles/*": ["src/shared/styles/*"],
+			"@/types/*": ["src/shared/types/*"],
+			"@/public/*": ["./public/*"]
 		},
 
 		"types": ["vite/client"],

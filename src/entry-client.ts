@@ -1,6 +1,4 @@
-import { createApp } from '@app/main'
-
-import './style.css'
+import { createApp } from '@/app/main'
 
 const { app } = createApp()
 

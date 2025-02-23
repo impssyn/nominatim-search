@@ -1,37 +1,39 @@
 {
-  "name": "nominatim-search",
-  "private": false,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "node server",
-    "build": "npm run build:client && npm run build:server",
-    "build:client": "vite build --outDir dist/client",
-    "build:server": "vite build --ssr src/entry-server.ts --outDir dist/server",
-    "preview": "cross-env NODE_ENV=production node server"
-  },
-  "dependencies": {
-    "compression": "^1.8.0",
-    "express": "^5.0.1",
-    "normalize.css": "^8.0.1",
-    "sirv": "^3.0.1",
-    "vue": "^3.5.13"
-  },
-  "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.13.4",
-    "@vitejs/plugin-vue": "^5.2.1",
-    "cross-env": "^7.0.3",
-    "eslint": "^9.21.0",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-vue": "^9.32.0",
-    "globals": "^16.0.0",
-    "prettier": "3.5.2",
-    "sass": "^1.85.0",
-    "typescript": "~5.7.3",
-    "typescript-eslint": "^8.24.1",
-    "vite": "^6.1.1",
-    "vue-tsc": "^2.2.2"
-  }
+	"name": "nominatim-search",
+	"private": false,
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "node server",
+		"build": "npm run build:client && npm run build:server",
+		"build:client": "vite build --outDir dist/client",
+		"build:server": "vite build --ssr src/entry-server.ts --outDir dist/server",
+		"preview": "cross-env NODE_ENV=production node server"
+	},
+	"dependencies": {
+		"axios": "^1.7.9",
+		"compression": "^1.8.0",
+		"express": "^5.0.1",
+		"normalize.css": "^8.0.1",
+		"pinia": "^3.0.1",
+		"sirv": "^3.0.1",
+		"vue": "^3.5.13"
+	},
+	"devDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^5.2.2",
+		"@types/express": "^5.0.0",
+		"@types/node": "^22.13.4",
+		"@vitejs/plugin-vue": "^5.2.1",
+		"cross-env": "^7.0.3",
+		"eslint": "^9.21.0",
+		"eslint-config-prettier": "^10.0.1",
+		"eslint-plugin-vue": "^9.32.0",
+		"globals": "^16.0.0",
+		"prettier": "3.5.2",
+		"sass": "^1.85.0",
+		"typescript": "~5.7.3",
+		"typescript-eslint": "^8.24.1",
+		"vite": "^6.1.1",
+		"vue-tsc": "^2.2.2"
+	}
 }

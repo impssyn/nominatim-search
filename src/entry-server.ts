@@ -1,5 +1,6 @@
-import { createApp } from '@app/main'
 import { renderToWebStream } from 'vue/server-renderer'
+
+import { createApp } from '@/app/main'
 
 export function render(_url: string) {
 	const { app } = createApp()
