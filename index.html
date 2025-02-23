@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nominatim Search</title>
+    <!--SEO-->
+    <meta name="description" content="Быстрый поиск местоположений с использованием Nominatim API." />
+    <meta name="keywords" content="карты, поиск, Nominatim, OpenStreetMap, геолокация" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nominatim Search" />
+    <meta property="og:description" content="Поиск мест по Nominatim API" />
+    <meta property="og:type" content="website" />
+
+    <!-- Preload -->
+    <link rel="preload" as="script" href="/src/entry-client.ts" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;" />
+    
+    <!--app-head-->
+  </head>
+  <body>
+    <div id="app"><!--app-html--></div>
+    <script type="module" src="/src/entry-client.ts"></script>
+  </body>
+</html>
