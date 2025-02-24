@@ -1,3 +1,26 @@
+@mixin responsive($size) {
+	@if $size == mobile {
+		@media (max-width: 600px) {
+			@content;
+		}
+	} @else if $size == tablet {
+		@media (max-width: 1024px) {
+			@content;
+		}
+	} @else if $size == desktop {
+		@media (min-width: 1025px) {
+			@content;
+		}
+	}
+}
+
 @mixin interactive {
 	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+
+	@media (hover: hover) {
+		&:hover {
+			transform: scale(1.01) translateY(-2px);
+		}
+	}
 }
